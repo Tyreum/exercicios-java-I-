@@ -14,10 +14,9 @@ public class JavaEx01 {
         double liquido = 0;
         double aumento = 0;
         
+        try{
         aux = JOptionPane.showInputDialog(null,"digite seu salário");
         salario = Double.parseDouble(aux); 
-        
-        
         
         aux = JOptionPane.showInputDialog(null,"digite seu percentual de aumento"); 
         aumento = Double.parseDouble(aux);
@@ -26,16 +25,29 @@ public class JavaEx01 {
         liquido = salario * percentual; 
        
         aumento = salario + liquido;
+            JOptionPane.showMessageDialog (null, "O valor do aumento é:" + liquido);
+        
+        JOptionPane.showMessageDialog (null, "Seu novo salário é:" + aumento); 
+          
+        }
+       
+        catch (NumberFormatException ex){
+
+            JOptionPane.showMessageDialog(null, "Apenas números por favor");
+            
+        }
+        }
+        
+        
+        
         
        
         
         
-        JOptionPane.showMessageDialog (null, "O valor do aumento é:" + liquido);
         
-        JOptionPane.showMessageDialog (null, "Seu novo salário é:" + aumento); 
         
         
         
     }
     
-}
+
