@@ -9,6 +9,6 @@ public class JavaEx05 {
         j = --i;
         k = i++;
         i+= 10;
-        JOptionPane.showMessageDialog(null, "o valor de i: "+ i + "\n o valor de j: "+ j +"\n o valor de k: "+ k +"\n o valor de k: "+ k);
+        JOptionPane.showMessageDialog(null, "o valor de i: "+ i + "\n o valor de j: "+ j +"\n o valor de k: "+ k);
     }
 }
