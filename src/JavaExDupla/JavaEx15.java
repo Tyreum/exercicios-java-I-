@@ -5,11 +5,12 @@ import javax.swing.*;
 public class JavaEx15 {
     
     public static void main(String[] args) {
-        int refeicao = 0, prato = 0, opcoes = 0, calorias = 0;
+        int refeicao = 0, prato = 0, calorias = 0;
         String comida = "";
         try{
         
             comida = JOptionPane.showInputDialog(null, "Escolha uma das refeições da lista\n\n1 - Prato: Vegetariano, Sobremesa: Abacaxi, Bebida: Chá\n2 - Prato: Peixe, Sobremesa: Sorvete diet, Bebida: Suco de laranja\n3 - Prato: Frango, Sobremesa: Mousse diet, Bebida: Suco de melão\n 4 - Prato: Carne, Sobremesa: Mousse de chocolate, Bebida: Refrigerante diet\n\n");
+            prato = Integer.parseInt(comida);
             switch(prato){
                 
                 case 1: comida = "Prato: Vegetariano, Sobremesa: Abacaxi, Bebida: Chá ";
